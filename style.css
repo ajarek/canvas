@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #00a4ef;
+}
+
+.h1 {
+    margin: 10px 0;
+}
+
+.logo {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -10px -10px 10px rgba(255, 255, 255, 0.2),
+        15px 15px 15px rgba(0, 0, 0, 0.1);
+}
+
+canvas {
+    background: url('trapezoid-area.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.active {
+    background: #00a4ef;
+}
+
+.input {
+    width: 500px;
+    height: 500px;
+    background: #00a4ef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+.label label {
+    font-size: 1.5rem;
+}
+
+.input input {
+    margin: 10px;
+    font-size: 1.2rem;
+    padding: 5px 10px;
+    border-radius: 6px;
+}
+
+.input button {
+    margin: 0 10px;
+    padding: 5px 10px;
+    font-size: 1.5rem;
+    border-radius: 6px;
+    background: #00a4ef;
+    border: none;
+    outline: none;
+    box-shadow: -10px -10px 10px rgba(255, 255, 255, 0.2),
+        15px 15px 15px rgba(0, 0, 0, 0.2),
+        inset -10px -10px 10px rgba(255, 255, 255, 0.2),
+        inset 15px 15px 15px rgba(0, 0, 0, 0.2);
+}
+
+.input button:hover {
+    transform: scale(1.1);
+}
